@@ -49,7 +49,7 @@ func PartialRatio(s1, s2 string) int {
 }
 
 func floatRatio(s1, s2 string) float64 {
-	lenSum := len(s1) + len(s2)
+	lenSum := len([]rune(s1)) + len([]rune(s2))
 	if lenSum == 0 {
 		return 0.0
 	}
