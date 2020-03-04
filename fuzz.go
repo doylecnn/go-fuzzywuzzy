@@ -12,7 +12,7 @@ import (
 // Returns an integer score [0,100], higher score indicates
 // that strings are closer.
 func Ratio(s1, s2 string) int {
-	return int(round(100 * floatRatio([]rune(s1), []rune(s2))))
+	return int(math.RoundToEven(100 * floatRatio([]rune(s1), []rune(s2))))
 }
 
 // PartialRatio computes a score of how close a string is with
